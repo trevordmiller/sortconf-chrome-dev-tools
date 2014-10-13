@@ -13,6 +13,8 @@ var groceryList = [
 var watchButtonNode = document.querySelector('.watch-button');
 watchButtonNode.addEventListener('click', function() {
 
+	debugger;
+
 	// Create an empty array
 	var groceryCart = [];
 

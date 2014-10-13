@@ -134,6 +134,31 @@ $marginBase: 1rem;
 		}
 	}
 
+	// Input
+	.submit-input {
+		display: flex;
+		justify-content: center;
+
+		input {
+			border: 3px solid #ccc;
+			font-family: $mainFont;
+			font-size: 2rem;
+			padding: 1rem 2rem;
+			border-radius: .5rem 0 0 .5rem;
+
+			&:focus {
+				outline: 0;
+				border: 3px solid $mainColor;
+			}
+		}
+
+		.button {
+			border-radius: 0 .5rem .5rem 0;
+		}
+	}
+
+
+
 	// Links
 	a {
 		text-decoration: underline !important;
@@ -163,6 +188,15 @@ $marginBase: 1rem;
 		h4,
 		small {
 			color: rgba(255, 255, 255, .5);
+		}
+
+		a {
+			color: rgba(255, 255, 255, .5);
+
+			&:hover,
+			&:active {
+				color: #fff;
+			}
 		}
 
 		strong {

@@ -186,91 +186,93 @@ COMMAND + OPTION + i
 			]
 		},
 		{
-			title: 'Timeline Tab',
-			subtitle: '',
-			slides: [
-				{
-					title: 'What you can do...',
-					uniqueContent: '
-						<ul>
-							<li class="fragment roll-in">Memory management.</li>
-							<li class="fragment roll-in">Profiling.</li>
-						</ul>
-						<div class="fragment roll-in">
-							<p>More info</p>
-							<a  href="https://developer.chrome.com/devtools">https://developer.chrome.com/devtools</a>
-						</div>
-					'
-				}
-			]
-		},
-		{
-			title: 'Profiles Tab',
-			subtitle: '',
-			slides: [
-				{
-					title: '',
-					uniqueContent: '
-					'
-				}
-			]
-		},
-		{
-			title: 'Audits Tab',
-			subtitle: '',
-			slides: [
-				{
-					title: '',
-					uniqueContent: '
-					'
-				}
-			]
-		},
-		{
 			title: 'Console Tab',
 			subtitle: '',
 			slides: [
 				{
-					title: 'The Console API',
+					title: 'Console dual setup',
 					uniqueContent: '
-					'
-				},
-				{
-					title: '$0',
-					uniqueContent: '
-					'
-				},
-			]
-		},
-		{
-			title: 'Chrome Extensions',
-			subtitle: '',
-			slides: [
-				{
-					title: 'Chrome Extentions',
-					uniqueContent: '
-						<ul>
-							<li class="fragment roll-in">Pagespeed Insights</li>
-							<li class="fragment roll-in">LiveReload</li>
-							<li class="fragment roll-in">JunkFill</li>
-							<li class="fragment roll-in">ColorZilla</li>
-							<li class="fragment roll-in">Batarang</li>
-							<li class="fragment roll-in">Grunt</li>
-							<li class="fragment roll-in">Devtools Terminal</li>
-							<li class="fragment roll-in">JSON View</li>
-							<li class="fragment roll-in">Web Developer Checklist</li>
-							<li class="fragment roll-in">Postman</li>
+						<pre class="fragment roll-in">
+							<code>
+ESC
+							</code>
+						</pre>
 
-							<li class="fragment roll-in">BuiltWith</li>
-							<li class="fragment roll-in">node-inspector</li>
-						</ul>
+						<div class="fragment roll-in">
+							Or...
+							<p>Tap the little icon...</p>
+						</div>
 					'
-				}
+				},
+				{
+					title: 'Grab selected node',
+					uniqueContent: '
+						<div class="fragment roll-in">
+							<pre>
+								<code>
+$0
+								</code>
+							</pre>
+						</div>
+						<div class="fragment roll-in">
+							<p>Grab the button node in the console:</p>
+							<a class="button">Grab me!</a>
+						</div>
+					'
+				},
+				{
+					title: 'Shell prompt',
+					uniqueContent: '
+						<p>Add an <span class="code">alert</span> with a <span class="code">click</span> to this button.</p>
+						<a class="button">Hello!</a>
+					'
+				},
+				{
+					title: 'Logging to the console',
+					uniqueContent: '
+						<div class="fragment roll-in">
+							<pre>
+								<code>
+console.log(stuff);
+								</code>
+							</pre>
+						</div>
+						<div class="fragment roll-in">
+							<p>Submit your favorite color:</p>
+							<div class="submit-input">
+								<input class="js-favorite-color-input" />
+								<a class="button js-console-log-button" href="">Submit</a>
+							</div>
+						</div>
+					'
+				},
+				{
+					title: 'Debugger',
+					uniqueContent: '
+						<div class="fragment roll-in">
+							<pre>
+								<code>
+debugger;
+								</code>
+							</pre>
+						</div>
+						<div class="fragment roll-in">
+							<p>Dubug when the button is tapped:</p>
+							<a class="button js-debugger-button">Debug time!</a>
+						</div>
+					'
+				},
 			]
 		},
 		{
 			title: 'Q & A',
 			subtitle: '',
+			slides: [
+			]
+		},
+		{
+			title: 'More info',
+			subtitle: '<a  href="https://developer.chrome.com/devtools">developer.chrome.com</a>',
 			slides: [
 			]
 		}
