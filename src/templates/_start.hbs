@@ -1,0 +1,32 @@
+{{!-- Main title slide --}}
+<section class="section-title" data-background="#1E2944" data-transition="{{ theme.specialTransition }}">
+	{{> sort-logo }}
+	<h4>{{ subtitle }}</h4>
+</section>
+
+{{!-- About the author --}}
+<section>
+	<img class="constrain-width" src="{{ githubData.avatar_url }}" alt="{{ githubData.name }}'s avatar'" />
+	<h2>{{ greetingText }}</h2>
+	<p>{{ githubData.name }}</p>
+	<p><a href="{{ githubData.html_url }}">@{{ githubData.login }}</a>
+</section>
+
+{{!-- Presentation outline --}}
+<section>
+	<h2>Presentation Outline</h2>
+	<ul>
+		{{#each sections }}
+			<li class="fragment">{{ title }}</li>
+		{{/each }}
+	</ul>
+</section>
+
+{{!-- Presentation outline --}}
+<section>
+	<h2>Follow along</h2>
+	<div class="fragment roll-in">
+		<h3>If you <strong>really</strong> want to learn, <strong>try it with me!</strong></h3>
+		<a href="http://trevordmiller.github.io/sortconf-chrome-dev-tools">http://trevordmiller.github.io/sortconf-chrome-dev-tools</a>
+	</div>
+</section>
