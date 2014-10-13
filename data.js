@@ -186,73 +186,92 @@ COMMAND + OPTION + i
 			]
 		},
 		{
-			title: 'Timeline Tab',
-			subtitle: '',
-			slides: [
-				{
-					title: '',
-					uniqueContent: '
-					'
-				}
-			]
-		},
-		{
-			title: 'Profiles Tab',
-			subtitle: '',
-			slides: [
-				{
-					title: '',
-					uniqueContent: '
-					'
-				}
-			]
-		},
-		{
-			title: 'Audits Tab',
-			subtitle: '',
-			slides: [
-				{
-					title: '',
-					uniqueContent: '
-					'
-				}
-			]
-		},
-		{
 			title: 'Console Tab',
 			subtitle: '',
 			slides: [
 				{
-					title: 'The Console API',
+					title: 'Console dual setup',
 					uniqueContent: '
+						<pre class="fragment roll-in">
+							<code>
+ESC
+							</code>
+						</pre>
+
+						<div class="fragment roll-in">
+							Or...
+							<p>Tap the little icon...</p>
+						</div>
 					'
 				},
 				{
-					title: '$0',
+					title: 'Grab selected node',
 					uniqueContent: '
+						<div class="fragment roll-in">
+							<pre>
+								<code>
+$0
+								</code>
+							</pre>
+						</div>
+						<div class="fragment roll-in">
+							<p>Grab the button node in the console:</p>
+							<a class="button">Grab me!</a>
+						</div>
+					'
+				},
+				{
+					title: 'Shell prompt',
+					uniqueContent: '
+						<p>Add an <span class="code">alert</span> with a <span class="code">click</span> to this button.</p>
+						<a class="button">Hello!</a>
+					'
+				},
+				{
+					title: 'Logging to the console',
+					uniqueContent: '
+						<div class="fragment roll-in">
+							<pre>
+								<code>
+console.log(stuff);
+								</code>
+							</pre>
+						</div>
+						<div class="fragment roll-in">
+							<p>Submit your favorite color:</p>
+							<div class="submit-input">
+								<input class="js-favorite-color-input" />
+								<a class="button js-console-log-button" href="">Submit</a>
+							</div>
+						</div>
+					'
+				},
+				{
+					title: 'Debugger',
+					uniqueContent: '
+						<div class="fragment roll-in">
+							<pre>
+								<code>
+debugger;
+								</code>
+							</pre>
+						</div>
+						<div class="fragment roll-in">
+							<p>Dubug when the button is tapped:</p>
+							<a class="button js-debugger-button">Debug time!</a>
+						</div>
 					'
 				},
 			]
 		},
 		{
-			title: 'Chrome Extensions',
+			title: 'Links',
+			subtitle: '<a  href="https://developer.chrome.com/devtools">https://developer.chrome.com/devtools</a>'
+		},
+		{
+			title: 'Q & A',
 			subtitle: '',
 			slides: [
-				{
-					title: 'Pagespeed',
-					uniqueContent: '
-					'
-				},
-				{
-					title: 'Grunt',
-					uniqueContent: '
-					'
-				},
-				{
-					title: 'Batarang',
-					uniqueContent: '
-					'
-				}
 			]
 		}
 	]
