@@ -80,7 +80,7 @@
 	"shadow"		:	true,		// Allows re-define variables later in code e.g. `var x=1; x=2;`.
 	"supernew"		:	true,		// Tolerate `new function () { ... };` and `new Object;`.
 	"undef"			:	true,		// Require all non-global variables be declared before they are used.
-	"unused"		:	true,		// This option warns when you define and never use your variables.
+	"unused"		:	false,		// This option warns when you define and never use your variables.
 
 	// STYLE DECISIONS
 	"newcap"		:	true,		// Require capitalization of all constructor functions e.g. `new F()`.

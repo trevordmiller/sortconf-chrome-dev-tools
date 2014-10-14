@@ -121,7 +121,7 @@ function program1(depth0,data) {
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.githubData)),stack1 == null || stack1 === false ? stack1 : stack1.html_url)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\">@"
     + escapeExpression(((stack1 = ((stack1 = (depth0 && depth0.githubData)),stack1 == null || stack1 === false ? stack1 : stack1.login)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "</a>\n</section>\n\n\n<section>\n	<h2>Presentation Outline</h2>\n	<ul>\n		";
+    + "</a>\n</section>\n\n\n<section>\n	<h2>What to expect</h2>\n	<ul>\n		<li class=\"fragment roll-in\">Covers <strong>basic</strong> to <strong>advanced</strong> features.</li>\n		<li class=\"fragment roll-in\">Can't cover everything, but <strong>key</strong> parts.</li>\n		<li class=\"fragment roll-in\">Mac hotkeys.</li>\n	</ul>\n</section>\n\n\n<section>\n	<h2>Presentation Outline</h2>\n	<ul>\n		";
   stack1 = helpers.each.call(depth0, (depth0 && depth0.sections), {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
   buffer += "\n	</ul>\n</section>\n\n\n<section>\n	<h2>Follow along</h2>\n	<div class=\"fragment roll-in\">\n		<h3>If you <strong>really</strong> want to learn, <strong>try it with me!</strong></h3>\n		<a href=\"http://trevordmiller.github.io/sortconf-chrome-dev-tools\">http://trevordmiller.github.io/sortconf-chrome-dev-tools</a>\n	</div>\n</section>\n";
