@@ -44,7 +44,7 @@ var data = {
 						<div class="fragment roll-in">
 							<pre>
 								<code>
-COMMAND + OPTION + i
+CMD + OPT + I
 								</code>
 							</pre>
 							<p>Or...</p>
@@ -59,7 +59,6 @@ COMMAND + OPTION + i
 					uniqueContent: '
 						<ul>
 							<li class="fragment roll-in">Settings cog</li>
-							<li class="fragment roll-in">Console shortcut</li>
 							<li class="fragment roll-in">Docking</li>
 						</ul>
 					'
@@ -140,8 +139,10 @@ COMMAND + OPTION + i
 				{
 					title: 'Timeline',
 					uniqueContent: '
-						<blockquote><p class="fragment roll-in">The <strong>DOMContentLoaded</strong> event is fired when the document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.</p>
-						<p class="fragment roll-in">The <strong>load</strong> event can be used to detect a fully-loaded page.</p></blockquote>
+						<blockquote class="fragment roll-in">
+							<p class="fragment roll-in">The <strong>DOMContentLoaded</strong> event is fired when the document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.</p>
+							<p class="fragment roll-in">The <strong>load</strong> event can be used to detect a fully-loaded page.</p>
+						</blockquote>
 					'
 				}
 			]
@@ -158,19 +159,20 @@ COMMAND + OPTION + i
 				{
 					title: 'Breakpoints',
 					uniqueContent: '
-						<ul>
-							<li>Step over</li>
-							<li>Step into</li>
-							<li>Step out</li>
-							<li>Deactivate breakpoints</li>
-							<li>Pause on exceptions</li>
-						</ul>
+						<div class="well fragment roll-in">
+							<p><span class="code">examples/breakpoints.js</span></p>
+						</div>
 					'
 				},
 				{
 					title: 'Watch expressions',
 					uniqueContent: '
-						<a class="button watch-button">Get Groceries</a>
+						<div class="fragment roll-in">
+							<a class="button js-watch-expression-button">Get Groceries</a>
+							<div class="well">
+								<p><span class="code">examples/watch-expressions.js</span></p>
+							</div>
+						</div>
 					'
 				},
 				{
@@ -182,6 +184,34 @@ COMMAND + OPTION + i
 					title: 'DOM breakpoints',
 					uniqueContent: '
 					'
+				},
+				{
+					title: 'Searching',
+					uniqueContent: '
+						<p class="fragment roll-in">Text search the current file: <span class="code">CMD + F</span></p>
+						<p class="fragment roll-in">Text search all files: <span class="code">CMD + OPT + F</span></p>
+						<p class="fragment roll-in">Find a function or CSS rule: <span class="code">CMD + SHIFT + O</span></p>
+					'
+				}
+			]
+		},
+		{
+			title: 'Resources Tab',
+			subtitle: '',
+			slides: [
+				{
+					title: 'All sorts of cool stuff...',
+					uniqueContent: '
+						<div class="fragment roll-in">
+							<p>For one example, add an item to local storage:</p>
+							<pre>
+								<code class="javascript">
+	var username = \'fred\';
+	localStorage.username = username;
+								</code>
+							</pre>
+						</div>
+					'
 				}
 			]
 		},
@@ -190,7 +220,7 @@ COMMAND + OPTION + i
 			subtitle: '',
 			slides: [
 				{
-					title: 'Console dual setup',
+					title: 'Console drawer',
 					uniqueContent: '
 						<pre class="fragment roll-in">
 							<code>
@@ -200,7 +230,7 @@ ESC
 
 						<div class="fragment roll-in">
 							Or...
-							<p>Tap the little icon...</p>
+							<p><small>Tap the little icon...</small></p>
 						</div>
 					'
 				},
@@ -215,7 +245,7 @@ $0
 							</pre>
 						</div>
 						<div class="fragment roll-in">
-							<p>Grab the button node in the console:</p>
+							<p>Grab this button node in the console:</p>
 							<a class="button">Grab me!</a>
 						</div>
 					'
@@ -223,8 +253,10 @@ $0
 				{
 					title: 'Shell prompt',
 					uniqueContent: '
-						<p>Add an <span class="code">alert</span> with a <span class="code">click</span> to this button.</p>
-						<a class="button">Hello!</a>
+						<div class="fragment roll-in">
+							<p>Add an <span class="code">alert</span> with a <span class="code">click</span> to this circle:</p>
+							<a class="circle"></a>
+						</div>
 					'
 				},
 				{
@@ -243,6 +275,9 @@ console.log(stuff);
 								<input class="js-favorite-color-input" />
 								<a class="button js-console-log-button" href="">Submit</a>
 							</div>
+							<div class="well">
+								<p><span class="code">examples/console-log.js</span></p>
+							</div>
 						</div>
 					'
 				},
@@ -259,18 +294,23 @@ debugger;
 						<div class="fragment roll-in">
 							<p>Dubug when the button is tapped:</p>
 							<a class="button js-debugger-button">Debug time!</a>
+							<div class="well">
+								<p><span class="code">examples/debugger.js</span></p>
+							</div>
 						</div>
 					'
 				},
 			]
 		},
 		{
-			title: 'Links',
-			subtitle: '<a  href="https://developer.chrome.com/devtools">https://developer.chrome.com/devtools</a>'
-		},
-		{
 			title: 'Q & A',
 			subtitle: '',
+			slides: [
+			]
+		},
+		{
+			title: 'More info',
+			subtitle: '<a  href="https://developer.chrome.com/devtools">developer.chrome.com</a>',
 			slides: [
 			]
 		}
